@@ -1,0 +1,22 @@
+import { Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+
+const Layout = lazy(() => import('./Layout/Layout'));
+const Home = lazy(() => import('../pages/Home/Home'));
+const Tweets = lazy(() => import('../pages/Tweets/Tweets'));
+
+const TweetsRoutes = () => {
+  return (
+    <Suspense>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="tweets" element={<Tweets />} />
+          <Route path="*" element={<Home />} />
+        </Route>
+      </Routes>
+    </Suspense>
+  );
+};
+
+export default TweetsRoutes;

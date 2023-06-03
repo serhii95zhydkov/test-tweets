@@ -1,20 +1,20 @@
-import { Routes, Route } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { BrowserRouter } from 'react-router-dom';
 
-const Layout = lazy(() => import('./Layout/Layout'));
-const Home = lazy(() => import('../pages/Home/Home'));
-const Tweets = lazy(() => import('../pages/Tweets/Tweets'));
+import { store, persistor } from 'redux/store';
+import TweetsRoutes from './TweetsRoutes';
 
-export const App = () => {
+const App = () => {
   return (
-    <Suspense>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="tweets" element={<Tweets />} />
-          <Route path="*" element={<Home />} />
-        </Route>
-      </Routes>
-    </Suspense>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <BrowserRouter basename="/test-tweets">
+          <TweetsRoutes />
+        </BrowserRouter>
+      </PersistGate>
+    </Provider>
   );
 };
+
+export default App;
