@@ -1,4 +1,7 @@
 import { useDispatch } from 'react-redux';
+
+import PropTypes from 'prop-types';
+
 import { updateUser } from 'redux/users/usersOperations';
 
 import logo from '../../images/logo.png';
@@ -61,6 +64,17 @@ const CardItem = ({ user }) => {
       </Button>
     </Item>
   );
+};
+
+CardItem.propTypes = {
+  user: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    user: PropTypes.string.isRequired,
+    tweets: PropTypes.number.isRequired,
+    followers: PropTypes.number.isRequired,
+    isFollowing: PropTypes.bool,
+  }).isRequired,
 };
 
 export default CardItem;
