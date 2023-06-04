@@ -59,4 +59,5 @@ export const Label = styled.label`
   font-weight: 600;
   font-size: 18px;
   color: #000000;
+  margin-right: 8px;
 `;

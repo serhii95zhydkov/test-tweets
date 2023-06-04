@@ -22,6 +22,7 @@ export const StyledLink = styled(Link)`
   margin-left: 10px;
   width: 40px;
   height: 40px;
+  color: #471ca9;
   :active {
     color: #471ca9;
   }

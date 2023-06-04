@@ -17,7 +17,7 @@ const Home = () => {
         <Title>
           Follow my
           <StyledLink to="/tweets">
-            <IoLogoTwitter />
+            <IoLogoTwitter style={{ color: '#471ca9' }}  />
           </StyledLink>
         </Title>
       </ContainerTitle>
