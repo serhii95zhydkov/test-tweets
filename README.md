@@ -10,8 +10,8 @@ subscriptions at any time.
 ## Technologies used
 
 - HTML
-- styled-component
-- React.js
+- styled-components
+- React
 - Redux
 - Axios
 - Mockapi
@@ -22,8 +22,8 @@ subscriptions at any time.
    template.
 2. Make sure you have the LTS version of Node.js installed on your computer.
    [Download and install](https://nodejs.org/en/) it if necessary.
-3. Install the basic project dependencies with the npm install command.
-4. Start development mode by running the npm start command.
+3. Install the basic project dependencies with the **npm install** command.
+4. Start development mode by running the **npm start** command.
 
 ## Deploy
 
