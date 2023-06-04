@@ -1,7 +1,26 @@
+import { IoLogoTwitter } from 'react-icons/io5';
+
+import bird from '../../images/bird.png';
+
+import {
+  ImgBackground,
+  ContainerTitle,
+  Title,
+  StyledLink,
+} from './Home.styled';
+
 const Home = () => {
   return (
     <>
-      <h2>Home</h2>
+      <ImgBackground src={bird} alt="bird" />
+      <ContainerTitle>
+        <Title>
+          Follow my
+          <StyledLink to="/tweets">
+            <IoLogoTwitter />
+          </StyledLink>
+        </Title>
+      </ContainerTitle>
     </>
   );
 };
