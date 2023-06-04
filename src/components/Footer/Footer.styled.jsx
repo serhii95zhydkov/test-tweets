@@ -8,6 +8,7 @@ export const Paragraph = styled.p`
 `;
 
 export const FooterLink = styled.a`
+  color: #471ca9;
   :active {
     color: #471ca9;
   }

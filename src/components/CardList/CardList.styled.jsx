@@ -33,6 +33,7 @@ export const Button = styled.button`
   :hover {
     transform: scale(1.1);
   }
+  color: #000000;
 `;
 
 export const Container = styled.div`
@@ -51,6 +52,7 @@ export const ContainerDrop = styled.div`
 
 export const Select = styled.select`
   background-color: #ebd8ff;
+  color: #000000;
 `;
 
 export const Label = styled.label`
