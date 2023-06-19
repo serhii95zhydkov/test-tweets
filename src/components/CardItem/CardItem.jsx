@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { updateUser } from 'redux/users/usersOperations';
 
 import logo from '../../images/logo.png';
-import background from '../../images/background.png';
 
 import {
   Item,
@@ -34,13 +33,9 @@ const CardItem = ({ user }) => {
 
   return (
     <Item key={user.id}>
-      <ImgLogo src={logo} alt="logo" width={76} height={22} />
-      <ImgBackground
-        src={background}
-        alt="background"
-        width={308}
-        height={168}
-      />
+      <ImgBackground>
+        <ImgLogo src={logo} alt="logo" width={76} height={22} />
+      </ImgBackground>
       <Container>
         <ContainerAvatar>
           <ImgAvatar

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import background from '../../images/background.png';
+
 export const Item = styled.li`
   position: relative;
   width: 380px;
@@ -28,8 +30,13 @@ export const ImgLogo = styled.img`
   left: 20px;
 `;
 
-export const ImgBackground = styled.img`
+export const ImgBackground = styled.div`
   margin: 0 auto;
+  width: 308px;
+  height: 168px;
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const Container = styled.div`

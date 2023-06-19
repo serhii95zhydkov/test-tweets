@@ -3,7 +3,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { BrowserRouter } from 'react-router-dom';
 
 import { store, persistor } from 'redux/store';
-import TweetsRoutes from './TweetsRoutes';
+import TweetsRoutes from './components/TweetsRoutes';
 
 const App = () => {
   return (
